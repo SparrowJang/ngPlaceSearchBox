@@ -29,6 +29,10 @@
 
         if ( attrs.placeholderText ) input.attr( 'placeholder', attrs.placeholderText );
 
+        if ( attrs.required ) input.attr( 'ng-required', attrs.required );
+
+        if ( attrs.boxClass ) input.attr( 'class', attrs.boxClass );
+
         google.maps.event.addListener( searchBox, 'places_changed', function(){
 
           scope.value = {places:searchBox.getPlaces()};

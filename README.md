@@ -54,6 +54,12 @@ Set a placeholder text.
 div placeholder-text="Search Box" ng-place-search-box ng-model="data"></div>
 ```
 
+If you want to set `required` or `class` attribute to input, do the following:
+
+```
+<div required="true" box-class="boxClass" ng-place-search-box ng-model="data"></div>
+```
+
 ##Demo
  
 Clone this project.
