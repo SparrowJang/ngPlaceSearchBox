@@ -16,10 +16,27 @@
       scope:{
         value:'=ngModel',
         bounds:'=bounds',
-        placesChanged:"&onPlacesChanged"
+        placesChanged:"&onPlacesChanged",
+        required:"@boxRequired",
+        inputText:"=boxText",
+        placeholderText:"@placeholderText",
+        boxClass:"@boxClass"
       }, 
 
-      template:'<input type="text"/>',
+      template:'<input type="text" ng-required="{{required}}" placeholder="{{placeholderText}}" ng-model="inputText"/>',
+
+      compile: function(tElement, tAttrs, transclude) {
+
+        return {
+
+          pre: function preLink(scope, iElement, iAttrs, controller) {
+
+            var input = iElement.find( 'input' );
+
+            if ( iAttrs.boxClass ) input.attr( 'class', iAttrs.boxClass );
+          }
+        };
+      },
 
       link:function( scope, elem, attrs, ctrl ){
 
@@ -27,11 +44,6 @@
 
         var searchBox = new google.maps.places.SearchBox( input[0] );
 
-        if ( attrs.placeholderText ) input.attr( 'placeholder', attrs.placeholderText );
-
-        if ( attrs.required ) input.attr( 'ng-required', attrs.required );
-
-        if ( attrs.boxClass ) input.attr( 'class', attrs.boxClass );
 
         google.maps.event.addListener( searchBox, 'places_changed', function(){
 
