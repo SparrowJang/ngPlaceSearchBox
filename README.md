@@ -16,14 +16,14 @@ bower install ngPlaceSearchBox
 
 ##Usage
 
-###Include angular 、google map and ngPlaceSearchBox javascripts
+####Include angular 、google map and ngPlaceSearchBox javascripts
 ```
 <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 <script type="text/javascript" src="/src/ngPlaceSearchBox.js"></script>
 ```
 
-###Create a search box element and set a output model
+####Create a search box element and set a output model
 ```
 <div ng-place-search-box ng-model="data" ></div>
 ```
