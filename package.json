@@ -1,6 +1,6 @@
 {
   "name": "ngPlaceSearchBox",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This is place search box for angular.",
   "main": "public/src/ngPlaceSearchBox",
   "keywords": [
