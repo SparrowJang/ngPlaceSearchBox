@@ -47,7 +47,7 @@ Set a high priority bounds.
 var defaultBounds = new google.maps.LatLngBounds(
     new google.maps.LatLng(21.88189,119.254875),
     new google.maps.LatLng(25.492868,122.97924));
-map.fitBounds(defaultBounds);
+$scope.defaultBounds;
 ```
 Set a placeholder text.
 ```
