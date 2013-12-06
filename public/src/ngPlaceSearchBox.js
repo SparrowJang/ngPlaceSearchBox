@@ -25,25 +25,13 @@
 
       template:'<input type="text" ng-required="{{required}}" placeholder="{{placeholderText}}" ng-model="inputText"/>',
 
-      compile: function(tElement, tAttrs, transclude) {
-
-        return {
-
-          pre: function preLink(scope, iElement, iAttrs, controller) {
-
-            var input = iElement.find( 'input' );
-
-            if ( iAttrs.boxClass ) input.attr( 'class', iAttrs.boxClass );
-          }
-        };
-      },
-
       link:function( scope, elem, attrs, ctrl ){
 
         var input = elem.find( 'input' );
 
         var searchBox = new google.maps.places.SearchBox( input[0] );
 
+        if ( attrs.boxClass ) input.attr( 'class', attrs.boxClass );
 
         google.maps.event.addListener( searchBox, 'places_changed', function(){
 
