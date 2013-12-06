@@ -53,6 +53,7 @@ Set a placeholder text.
 ```
 div placeholder-text="Search Box" ng-place-search-box ng-model="data"></div>
 ```
+
 ##Demo
  
 Clone this project.
