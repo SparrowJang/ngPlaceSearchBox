@@ -1,0 +1,23 @@
+{
+  "name": "ngPlaceSearchBox",
+  "version": "0.0.0",
+  "authors": [
+    "SparrowJang <sparrow.jang@gmail.com>"
+  ],
+  "description": "This is place search box for angular.",
+  "main": "public/src/ngPlaceSearchBox.js",
+  "keywords": [
+    "placesearch"
+  ],
+  "dependencies":{
+    "angular": "~1.2.3"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
