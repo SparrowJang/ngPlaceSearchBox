@@ -1,7 +1,7 @@
 ngPlaceSearchBox
 ===============================
 
-An Angular[Angularjs](http://angularjs.org/) module that is place box of google map.
+An [Angularjs](http://angularjs.org/) module that is place box of google map.
 
 ##Dependency
 
