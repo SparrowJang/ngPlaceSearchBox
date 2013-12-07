@@ -36,6 +36,7 @@
         google.maps.event.addListener( searchBox, 'places_changed', function(){
 
           scope.value = {places:searchBox.getPlaces()};
+          scope.inputText = input.val();
           scope.$apply();
 
           if ( angular.isFunction( scope.placesChanged ) ) scope.placesChanged();
