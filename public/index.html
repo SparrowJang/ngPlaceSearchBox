@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="/src/ngPlaceSearchBox.js"></script>
   </head>
   <body ng-app="google.maps" ng-controller="demoCtrl">
-    <div placeholder-text="Search Box" bounds="bounds" ng-place-search-box ng-model="data" on-places-changed="onPlacesChanged()" box-text="boxText" box-required="true" box-class="test" ></div>
+    <div placeholder-text="Search Box" bounds="bounds" ng-place-search-box ng-model="data" on-places-changed="onPlacesChanged()" box-input="boxText" box-required="true" box-class="test" ></div>
     <div id="map-canvas"></div>
 	<script type="text/javascript">
 		function demoCtrl( $scope ){

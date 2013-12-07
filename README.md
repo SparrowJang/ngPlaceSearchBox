@@ -25,7 +25,7 @@ bower install ngPlaceSearchBox
 
 ####Create a search box element ,and set output model and input model
 ```
-<div ng-place-search-box box-text="inputText" ng-model="data" ></div>
+<div ng-place-search-box box-input="inputText" ng-model="data" ></div>
 ```
 
 ```
@@ -41,7 +41,7 @@ Set a event of search result.
 ```
 Set a high priority bounds.
 ```
-<div bounds="bounds" ng-place-search-box box-text="inputText" ng-model="data"></div>
+<div bounds="bounds" ng-place-search-box box-input="inputText" ng-model="data"></div>
 ```
 ```
 var defaultBounds = new google.maps.LatLngBounds(
@@ -57,7 +57,7 @@ div placeholder-text="Search Box" ng-place-search-box ng-model="data"></div>
 If you want to set `required` or `class` attribute to input, do the following:
 
 ```
-<div box-text="inputText" box-required="true" box-class="boxClass" ng-place-search-box ng-model="data"></div>
+<div box-input="inputText" box-required="true" box-class="boxClass" ng-place-search-box ng-model="data"></div>
 ```
 
 ##Demo

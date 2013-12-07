@@ -18,7 +18,7 @@
         bounds:'=bounds',
         placesChanged:"&onPlacesChanged",
         required:"@boxRequired",
-        inputText:"=boxText",
+        inputText:"=boxInput",
         placeholderText:"@placeholderText",
         boxClass:"@boxClass"
       }, 
