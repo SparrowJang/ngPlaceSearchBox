@@ -28,6 +28,7 @@ bower install ngPlaceSearchBox
 <div ng-place-search-box box-input="inputText" ng-model="data" ></div>
 ```
 
+####Setup a dependency of module
 ```
 angular.module( "app", [
 	"google.maps"
