@@ -17,19 +17,22 @@ bower install ngPlaceSearchBox
 ##Usage
 
 ####Include angular 、google map and ngPlaceSearchBox javascripts
-```
+
+```html
 <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 <script type="text/javascript" src="/src/ngPlaceSearchBox.js"></script>
 ```
 
 ####Create a search box element ,and set output model and input model
-```
+
+```html
 <div ng-place-search-box box-input="inputText" ng-model="data" ></div>
 ```
 
 ####Setup a dependency of module
-```
+
+```js
 angular.module( "app", [
 	"google.maps"
 ]);
@@ -37,27 +40,32 @@ angular.module( "app", [
 
 > Optionally, specify `bounds` 、 `on-places-changed` event and placeholder text:
 Set a event of search result.
-```
+
+```html
 <div on-places-changed="onPlacesChanged()" ng-place-search-box box-text="inputText" ng-model="data"></div>
 ```
+
 Set a high priority bounds.
-```
+
+```html
 <div bounds="bounds" ng-place-search-box box-input="inputText" ng-model="data"></div>
 ```
-```
+
+```js
 var defaultBounds = new google.maps.LatLngBounds(
     new google.maps.LatLng(21.88189,119.254875),
     new google.maps.LatLng(25.492868,122.97924));
 $scope.defaultBounds;
 ```
 Set a placeholder text.
-```
-div placeholder-text="Search Box" ng-place-search-box ng-model="data"></div>
+
+```html
+<div placeholder-text="Search Box" ng-place-search-box ng-model="data"></div>
 ```
 
 If you want to set `required` or `class` attribute to input, do the following:
 
-```
+```html
 <div box-input="inputText" box-required="true" box-class="boxClass" ng-place-search-box ng-model="data"></div>
 ```
 
