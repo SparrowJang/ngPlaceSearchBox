@@ -3,20 +3,20 @@ ngPlaceSearchBox
 
 An [Angularjs](http://angularjs.org/) module that is place box of google map.
 
-##Dependency
+## Dependency
 
 * angularjs
 * google map
 
-##Install
+## Install
 
 ```
 bower install ngPlaceSearchBox
 ```
 
-##Usage
+## Usage
 
-####Include angular 、google map and ngPlaceSearchBox javascripts
+#### Include angular 、google map and ngPlaceSearchBox javascripts
 
 ```html
 <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
@@ -24,13 +24,13 @@ bower install ngPlaceSearchBox
 <script type="text/javascript" src="/src/ngPlaceSearchBox.js"></script>
 ```
 
-####Create a search box element ,and set output model and input model
+#### Create a search box element ,and set output model and input model
 
 ```html
 <div ng-place-search-box box-input="inputText" ng-model="data" ></div>
 ```
 
-####Setup a dependency of module
+#### Setup a dependency of module
 
 ```js
 angular.module( "app", [
@@ -69,7 +69,7 @@ If you want to set `required` or `class` attribute to input, do the following:
 <div box-input="inputText" box-required="true" box-class="boxClass" ng-place-search-box ng-model="data"></div>
 ```
 
-##Demo
+## Demo
  
 Clone this project.
  
